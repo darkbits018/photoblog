@@ -42,14 +42,16 @@ images:
   - image_path: /assets/images/photos/image20.jpg
     title: image19
   - image_path: /assets/images/photos/image21.jpg
-    title: image20
+    title: image20 
   - image_path: /assets/images/photos/image22.jpg
     title: image21
- 
 ---
-
-<ul class="photo-gallery">
-    {% for image in page.images %}
-      <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
-    {% endfor %}
+<ul class="polaroid">
+  {% for image in page.images %}
+  <li>
+    <a href="#">
+      <img height="250" src="{{ image.image_path }}" alt="{{ image.title}}" />
+    </a>
+  </li>
+  {% endfor %}
 </ul>
