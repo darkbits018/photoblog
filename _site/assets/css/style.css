@@ -1,8 +1,10 @@
-body { background-color: black; }
+body { background-image: url(/assets/images/bg.jpeg); background-size: cover; background-repeat: no-repeat; background-position: center center; width: auto; height: auto; }
 
 ul { list-style: none; }
 
 ul li { display: inline-block; }
+
+.hero { display: block; margin-left: auto; margin-right: auto; margin-top: 80px; width: auto; }
 
 .current { color: green; }
 
@@ -13,5 +15,27 @@ ul li { display: inline-block; }
 .polaroid img { display: block; width: 250px; }
 
 .polaroid a:hover { -webkit-transform: scale(1.2); -moz-transform: scale(1.2); transform: scale(1.2); z-index: 10; -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7); }
+
+.wrapper { width: 60%; text-align: center; margin-top: 100px; }
+
+.home-polaroid { background: #fff; padding: 1rem; -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); -moz-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); }
+
+.home-polaroid > img { max-width: 90%; height: auto; }
+
+.caption { font-size: 1.8rem; text-align: center; line-height: 2em; }
+
+.item .home-polaroid:before { content: ''; position: absolute; z-index: -1; transition: all 0.40s; }
+
+.item:nth-of-type(2n+1) { transform: scale(0.8, 0.8) rotate(5deg); transition: all 0.35s; }
+
+.item:nth-of-type(2n+1) .home-polaroid:before { transform: rotate(6deg); height: 20%; width: 47%; bottom: 30px; right: 12px; box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.item:nth-of-type(2n+2) { transform: scale(0.8, 0.8) rotate(-5deg); transition: all 0.35s; }
+
+.item:nth-of-type(2n+2) .home-polaroid:before { transform: rotate(-6deg); height: 20%; width: 47%; bottom: 30px; left: 12px; box-shadow: 0 2.1rem 2rem rgba(0, 0, 0, 0.4); }
+
+.item:hover { filter: none; transform: scale(1, 1) rotate(0deg); transition: all 0.40s; }
+
+.item:hover .home-polaroid:before { content: ''; position: absolute; z-index: -1; transform: rotate(0deg); height: 60%; width: 60%; bottom: 0%; right: 10%; box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.2); transition: all 0.35s; }
 
 /*# sourceMappingURL=style.css.map */
