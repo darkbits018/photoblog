@@ -1,0 +1,55 @@
+---
+layout: default
+images:
+  - image_path: /assets/images/photos/image01.jpg
+    title: image01
+  - image_path: /assets/images/photos/image02.jpg
+    title: image02
+  - image_path: /assets/images/photos/image03.jpg
+    title: image03
+  - image_path: /assets/images/photos/image04.jpg
+    title: image04
+  - image_path: /assets/images/photos/image05.jpg
+    title: image05
+  - image_path: /assets/images/photos/image06.jpg
+    title: image06
+  - image_path: /assets/images/photos/image07.jpg
+    title: image01
+  - image_path: /assets/images/photos/image08.jpg
+    title: image07
+  - image_path: /assets/images/photos/image09.jpg
+    title: image08
+  - image_path: /assets/images/photos/image10.jpg
+    title: image09
+  - image_path: /assets/images/photos/image11.jpg
+    title: image10
+  - image_path: /assets/images/photos/image12.jpg
+    title: image11
+  - image_path: /assets/images/photos/image13.jpg
+    title: image12
+  - image_path: /assets/images/photos/image14.jpg
+    title: image13
+  - image_path: /assets/images/photos/image15.jpg
+    title: image14
+  - image_path: /assets/images/photos/image16.jpg
+    title: image15
+  - image_path: /assets/images/photos/image17.jpg
+    title: image16
+  - image_path: /assets/images/photos/image18.jpg
+    title: image17
+  - image_path: /assets/images/photos/image19.jpg
+    title: image18
+  - image_path: /assets/images/photos/image20.jpg
+    title: image19
+  - image_path: /assets/images/photos/image21.jpg
+    title: image20
+  - image_path: /assets/images/photos/image22.jpg
+    title: image21
+ 
+---
+
+<ul class="photo-gallery">
+    {% for image in page.images %}
+      <li><img src="{{ image.image_path }}" alt="{{ image.title}}"/></li>
+    {% endfor %}
+</ul>
