@@ -2,12 +2,19 @@
   <nav class="nav">
     <ul class="unlist-nav">
       {% for item in site.data.navigation %}
-        <li class="list-nav">
-          <a class="nav-link" href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
-            {{ item.name }}
-          </a>
-        </li>
+      <li class="list-nav">
+        <a class="nav-link" href="{{ item.link }}" {% if page.url==item.link %}class="current" {% endif %}>
+          {{ item.name }}
+        </a>
+      </li>
       {% endfor %}
     </ul>
   </nav>
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+        {% include svg-icons.html %}
+      </footer>
+    </div>
+  </div>
 </div>

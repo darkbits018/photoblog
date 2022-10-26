@@ -1,3 +1,4 @@
+@import "svg-icons";
 body {
   background-color: black;
   width: auto;
@@ -170,11 +171,11 @@ ul .pic-list {
 
 .nav .unlist-nav {
   list-style: none;
-  
+
   .list-nav {
     position: relative;
     margin: 3.2em 0;
-    
+
     .nav-link {
       line-height: 5em;
       text-transform: uppercase;
@@ -184,19 +185,19 @@ ul .pic-list {
       display: block;
       transition: all ease-out 300ms;
     }
-    
+
     &.current .nav-link {
       color: black;
     }
-    
+
     &:not(.current)::after {
       opacity: 0.2;
     }
-    
+
     &:not(.current):hover .nav-link {
       color: rgba(black, 1);
     }
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -214,4 +215,17 @@ ul .pic-list {
 
 .gal-container {
   max-width: 75%;
+}
+
+//footer
+.wrapper-footer {
+  margin-top: 700px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+
+footer {
+  padding: 20px 10px;
+  text-align: center;
 }
